@@ -1,19 +1,19 @@
 - name: Github Action Merge Dependabot
-  # You may pin to the exact commit or the version.
-  # uses: fastify/github-action-merge-dependabot@17c6db1d88efa8dfd19fe28e86a8d37d1269bfdb
-  uses: fastify/github-action-merge-dependabot@v3.0.2
-  with:
-    # A GitHub token
-    github-token: 
-    # Packages that you want to manually review before upgrading
-    exclude: # optional
-    # If true, the PR is only approved but not merged
-    approve-only: # optional
-    # The merge method you would like to use (squash, merge, rebase)
-    merge-method: # optional, default is squash
-    # An arbitrary message that you'd like to comment on the PR after it gets auto-merged
-    merge-comment: # optional, default is 
-    # Auto-merge on major, minor, patch updates based on Semantic Versioning
-    target: # optional, default is any
-    # A pull request number, only required if triggered from a workflow_dispatch event
-    pr-number: # optional
+# You may pin to the exact commit or the version.
+# uses: fastify/github-action-merge-dependabot@17c6db1d88efa8dfd19fe28e86a8d37d1269bfdb
+uses: fastify/github-action-merge-dependabot@v3.0.2
+with:
+  # A GitHub token
+  github-token: 
+  # Packages that you want to manually review before upgrading
+  exclude: # optional
+  # If true, the PR is only approved but not merged
+  approve-only: # optional
+  # The merge method you would like to use (squash, merge, rebase)
+  merge-method: # optional, default is squash
+  # An arbitrary message that you'd like to comment on the PR after it gets auto-merged
+  merge-comment: # optional, default is 
+  # Auto-merge on major, minor, patch updates based on Semantic Versioning
+  target: # optional, default is any
+  # A pull request number, only required if triggered from a workflow_dispatch event
+  pr-number: # optional
